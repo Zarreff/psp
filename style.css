@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Gruppo&family=Turret+Road:wght@300&display=swap');
+
+/* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.base {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 10% auto;
+    background-color: #3a3a3a;
+}
+
+.base::before {
+    content: '';
+    position: absolute;
+    width: 686px;
+    height: 376px;
+    margin: 12px 7px;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.base::after {
+    content: '';
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    height: 2px;
+    width: 122px;
+    background-color: azure;
+}
+/* END BASE */
+/* GAME ZONE */
+.text-game {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 7%;
+    left: 4%;
+}
+
+.text-game > h1 {
+    width: 300px;
+    height: 60px;
+    padding-bottom: 7px;
+    color: white;
+}
+
+.grid-games {
+    position: absolute;
+    display: none;
+    top: 3%;
+    width: 693px;
+    height: 376px;
+    background-color: rgba(8, 15, 107, 0.5);
+}
+
+.img-screen {
+    height: 280px;
+    width: 170px;
+    padding: 7px;
+    margin: 75px 0px 0px 10px;
+}
+
+/* TRIGGERS */
+.trigger-l {
+    position: absolute;
+    top: -4%;
+    left: -4%;
+    width: 95px;
+    height: 25px;
+    background-color: rgb(44, 44, 44);
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    z-index: -1;
+}
+
+.trigger-r {
+    position: absolute;
+    top: -4%;
+    right: -4%;
+    width: 95px;
+    height: 25px;
+    background-color: rgb(44, 44, 44);
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    z-index: -1;
+}
+/* END TRIGGERS */
+/* LEFT SIDE*/
+.side {
+    position: relative;
+    top: 0%;
+    left: -22%;
+    height: 400px;
+    width: 160px;
+    background-color: #3a3a3a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.c-buttons {
+    position: relative;
+    top: 22%;
+    left: 2%;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    background-color: #4c4c4c;
+    border-radius: 50%;
+}
+
+.c-buttons-1::before {
+    content: '';
+    position: absolute;
+    bottom: 39%;
+    left: 30%;
+    width: 30px;
+    height: 30px;
+    background-color: #3a3a3a;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.c-buttons-1::after {
+    content: '';
+    position: absolute;
+    bottom: 39%;
+    right: 7%;
+    width: 30px;
+    height: 30px;
+    background-color: #3a3a3a;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.c-buttons-2::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #3a3a3a;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.c-buttons-2::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #3a3a3a;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.square-c-buttons1 {
+    position: absolute;
+    width: 20px;
+    height: 42px;
+    left: 14%;
+    bottom: 34%;
+    background-color: #3a3a3a;
+}
+
+.square-c-buttons1::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 42px;
+    left: 373%;
+    top: 0%;
+    background-color: #3a3a3a;
+}
+
+.square-c-buttons2 {
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 34%;
+    bottom: 16%;
+    background-color: #3a3a3a;
+}
+
+.square-c-buttons2::before {
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 20px;
+    left: 0%;
+    bottom: 350%;
+    background-color: #3a3a3a;
+}
+
+.analogic {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 26%;
+    left: 33%;
+    border-radius: 50%;
+    background-color: #4c4c4c;
+}
+
+.analogic::before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 18%;
+    left: 18%;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, transparent 10%, transparent 90%, #333 90%),
+    linear-gradient(to bottom, transparent 10%, #3a3a3a 10%, #3a3a3a 90%);
+    background-size: 10px 10px;
+    box-shadow: inset 1px -1px 7px rgba(0, 0, 0, 0.411);
+}
+/* END LEFT SIDE*/
+
+/* RIGHT SIDE */
+.other-side {
+    position: absolute;
+    top: 0%;
+    right: -22%;
+    height: 400px;
+    width: 160px;
+    background-color: #3a3a3a;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.power {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5%;
+    left: 25%;
+    background-color: #4c4c4c;
+}
+
+.buttons {
+    position: relative;
+    top: 16%;
+    right: 2%;
+    width: 130px;
+    height: 130px;
+    margin: auto; 
+    background-color: #4c4c4c;
+    border-radius: 50%;
+}
+
+.buttons-1::before {
+    content: '';
+    position: absolute;
+    bottom: 37%;
+    left: 7%;
+    width: 35px;
+    height: 35px;
+    background-color: #3a3a3a;
+    border-radius: 50%;
+}
+
+.buttons-1::after {
+    content: '';
+    position: absolute;
+    bottom: 37%;
+    right: 7%;
+    width: 35px;
+    height: 35px;
+    background-color: #3a3a3a;
+    border-radius: 50%;
+}
+
+.buttons-2::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 37%;
+    width: 35px;
+    height: 35px;
+    background-color: #3a3a3a;
+    border-radius: 50%;
+}
+
+.buttons-2::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    width: 35px;
+    height: 35px;
+    background-color: #3a3a3a;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+    display: block;
+    position: absolute;
+    color: rgba(240, 255, 255, 0.795);
+}
+
+.triangle {
+    top: 14%;
+    left: 41%;
+    z-index: 1;
+}
+
+.square {
+    top: 40%;
+    left: 11%;
+}
+
+.circle {
+    top: 40%;
+    right: 11%;
+}
+
+.x {
+    bottom: 14%;
+    left: 41%;
+    z-index: 1;
+}
+/* END RIGHT SIDE */
+/* MENU */
+.bottom {
+    position: relative;
+    height: 50px;
+    width: 600px;
+    margin: auto;
+    top: -7%;
+    border-radius: 40%;
+    background-color: #4c4c4c;
+    z-index: -1;
+}
+
+.menu {
+    position: absolute;
+    height: 12px;
+    width: 35px;
+    bottom: 15%;
+    right: 22%;
+    border-radius: 35%;
+    background-color: #333;
+    font-size: 0.7em;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.918);
+    z-index: 10;
+}
+
+.select {
+    position: absolute;
+    height: 12px;
+    width: 35px;
+    bottom: 15%;
+    right: 30%;
+    border-radius: 35%;
+    background-color: #333;
+    font-size: 0.7em;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.918);
+}
+
+.volume {
+    position: absolute;
+    height: 15px;
+    width: 80px;
+    left: 20%;
+    bottom: 10%;
+    border-radius: 20%;
+    background-color: #3a3a3a;
+}
+
+.volume span {
+    font-size: 1em;
+}
+
+.volume-down {
+    position: absolute;
+    left: 5%;
+}
+
+.volume-up {
+    position: absolute;
+    right: 5%;
+}
+
+.volume-text {
+    position: absolute;
+    left: 35%;
+    color: whitesmoke;
+}
+
+.psp {
+    position: absolute;
+    width: 30px;
+    left: 45%;
+    bottom: 10%;
+    font-family: 'BhuTuka Expanded One', cursive;
+    color: white;
+}
+/* END MENU */
